@@ -10,7 +10,6 @@ public class SnakeLadder {
         int Step_Count = 0;
         int count_of_dice = 0;
         int condition = 10;
-
         while (condition > 0) {
             int options = (int) (Math.random() * 3 + 1);
             System.out.println("option is " +options);
@@ -21,7 +20,7 @@ public class SnakeLadder {
                 count_of_dice++;
             }
 
-            if (options == 1) {
+            if(options == 1) {
                 System.out.println("No Play");
                 Step_Count = Step_Count;
             } else if (options == 2) {
