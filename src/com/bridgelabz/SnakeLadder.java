@@ -6,7 +6,7 @@ public class SnakeLadder {
 
         System.out.println("starting of Snake and Ladder Game");
         System.out.println("The single player is at position 0");
-        System.out.println("----------------------------------");
+        System.out.println("-------------------------------------");
         int Step_Count = 0;
         int count_of_dice = 0;
         int condition = 10;
@@ -38,7 +38,13 @@ public class SnakeLadder {
             } else {
                 System.out.println("roll dice again");
             }
+
             System.out.println("step count is " +Step_Count);
+            int Previous_Step_Count = Step_Count;
+
+            if(Step_Count>100) {
+                Step_Count = Previous_Step_Count;
+            }
 
             System.out.println("-------------------------");
 
